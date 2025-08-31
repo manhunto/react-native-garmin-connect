@@ -8,7 +8,7 @@ object AppConstants {
   const val MESSAGE_TYPE_CURRENT_ANGLE = "MESSAGE_TYPE_CURRENT_ANGLE"
   const val MESSAGE_TYPE_MAX_ANGLE = "MESSAGE_TYPE_MAX_ANGLE"
 
-  const val APP_ID = "467f4bb7-cd3c-45c4-a39b-9bb78260c9ed"
+  const val APP_ID = "ae0c9c23-71b8-4285-ab84-a467a096f5c6"
 
   const val STATUS_ONLINE = "ONLINE"
   const val STATUS_OFFLINE = "OFFLINE"
