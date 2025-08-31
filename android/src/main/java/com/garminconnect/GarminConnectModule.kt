@@ -37,7 +37,7 @@ class GarminConnectModule internal constructor(reactContext: ReactApplicationCon
   @ReactMethod
   override fun initGarminSDK(urlName: String?) {
     myApp = IQApp(AppConstants.APP_ID);
-    connectIQ = ConnectIQ.getInstance(getContext(), IQConnectType.WIRELESS);
+    connectIQ = ConnectIQ.getInstance(getContext(), IQConnectType.TETHERED);
     connectIQ?.initialize(getContext(), false, this);
   }
 
