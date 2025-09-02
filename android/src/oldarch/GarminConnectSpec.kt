@@ -13,7 +13,7 @@ abstract class GarminConnectSpec internal constructor(context: ReactApplicationC
   abstract fun showDevicesList()
   abstract fun getDevicesList(promise: Promise)
   abstract fun connectDevice(id: String?, model: String?, name: String?)
-  abstract fun sendMessage(message: String)
+  abstract fun sendMessage(message: Object)
   // Only for IOS
   abstract fun addListener(eventType: String?)
   // Only for IOS

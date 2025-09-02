@@ -92,8 +92,8 @@ export function connectDevice(id: string, model: string, name: string) {
 /**
  * Functions that send message to watch
  * Warning! it wasn't tested, may not work properly
- * @param {string} message
+ * @param {object} message
  */
-export function sendMessage(message: string) {
+export function sendMessage(message: object) {
   GarminConnect.sendMessage(message);
 }

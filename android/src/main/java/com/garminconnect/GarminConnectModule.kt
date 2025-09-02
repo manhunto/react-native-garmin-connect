@@ -143,12 +143,13 @@ class GarminConnectModule internal constructor(reactContext: ReactApplicationCon
   }
 
   @ReactMethod
-  override fun sendMessage(message: String) {
+  override fun sendMessage(message: ReadableMap) {
     val TAG = "sendMessage"
+    val javaMap: Map<String, Any?> = message.toHashMap()
     try {
       try {
         connectIQ?.sendMessage(
-          connectedDevice, myApp, message
+          connectedDevice, myApp, javaMap
         ) { iqDevice: IQDevice, iqApp: IQApp, iqMessageStatus: IQMessageStatus ->
           run {
             Log.e(TAG, "status: " + iqMessageStatus.name);

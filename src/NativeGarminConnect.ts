@@ -8,7 +8,7 @@ export interface Spec extends TurboModule {
   showDevicesList(): void;
   getDevicesList(): Promise<Device[]>;
   connectDevice(id: string, model: string, name: string): void;
-  sendMessage(message: string): void;
+  sendMessage(message: object): void;
   addListener: (eventType: string) => void;
   removeListeners: (count: number) => void;
 }

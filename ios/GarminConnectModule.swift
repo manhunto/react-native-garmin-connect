@@ -43,7 +43,7 @@ public class GarminConnectModule: NSObject, IQDeviceEventDelegate, IQAppMessageD
         ConnectIQ.sharedInstance().register(forDeviceEvents: device, delegate: self)
     }
 
-    @objc public func sendMessage(_ message: String) {
+    @objc public func sendMessage(_ message: [String: Any]) {
         if let currentApp = connectedApp {
             ConnectIQ.sharedInstance().sendMessage(message, to: currentApp, progress: nil, completion: nil)
         }
